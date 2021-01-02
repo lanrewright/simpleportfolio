@@ -1,0 +1,515 @@
+/*This section handles all general object designs*/
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+body {
+
+  font-family: Helvetica, sans-serif;
+  font-weight:normal;
+  color: white;
+  margin: 0;
+
+
+}
+
+h2 {
+  display: block;
+
+}
+
+p {
+  width: 19.65rem;
+
+}
+
+a {
+  font-family: Helvetica, sans-serif;
+  font-weight:normal;
+  color: #6e6e73;
+  line-height: 2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+
+/* This section handles all image designs */
+
+img {
+  width: 7.5rem;
+  height: 7.5rem;
+}
+
+.curious-lanre {
+  float: right;
+  margin-left: 2rem;
+  margin-top: 2rem;
+
+}
+
+
+.strategy-lanre {
+  float: right;
+  margin-left: 2rem;
+  margin-top: 2rem;
+
+}
+
+
+.webdev-lanre {
+  float: right;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+
+.product-lanre {
+  float: right;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+
+.contact-image {
+  position: absolute;
+  left: 0;
+  bottom: 7rem;
+  margin-left: 2rem;
+  margin-top: 18rem;
+}
+
+
+/* This section handles the designs in the first div*/
+
+/* mobile-first*/
+
+.intro-container {
+  background-color: black;
+  display: flex;
+  height: 50.75rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.intro {
+  color: grey;
+  display: block;
+  font-size: 2.625rem;
+  font-family: "Almarai", sans-serif;
+  font-weight:900;
+  letter-spacing: 1px;
+  margin:auto;
+  margin-right:2rem;
+  text-align: left;
+  white-space: nowrap;
+  writing-mode: vertical-rl;
+}
+
+.innovation-disciple {
+  color: grey;
+  display: inline-block;
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: calc(1.3rem);
+  font-weight: normal;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  margin-right:6.00rem;
+  margin-top: 16.06rem;
+  position: absolute;
+  right: 0;
+  top:0;
+  text-align: right;
+  text-decoration: underline;
+}
+
+.innovation-disciple-definition {
+  color: grey;
+  display: inline-block;
+  font-family: Helvetica, sans-serif;
+  font-size: x-small;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  line-height: 2;
+  white-space: normal;
+  margin-right:6.00rem;
+  margin-top: 22.95rem;
+  position: absolute;
+  right: 0;
+  top:0;
+  text-align: right;
+  width: 14rem;
+
+}
+
+/* Other Media*/
+
+@media screen and (min-width: 768px) {
+
+  .intro-container {
+    min-height: 53.25rem;
+  }
+
+  .intro {
+    font-size: 4rem;
+    margin-right:3rem;
+  }
+
+  .innovation-disciple {
+    font-size: 2rem;
+    white-space: nowrap;
+    margin-right:9rem;
+    margin-top: 13rem;
+  }
+
+  .innovation-disciple-definition {
+    font-size: 0.1rem;
+    font-weight: lighter;
+    margin-right:9rem;
+    margin-top: 24rem;
+    width: 22rem;
+  }
+}
+
+
+
+/* This section handles the designs in the second div*/
+
+
+.middle-container {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30;
+  margin-right: 30;
+  width: 100%;
+  margin: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  position: relative;
+  height: 53.25rem;
+
+}
+
+.research-skill {
+  flex: 1;
+
+}
+
+.research-title {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 1.5rem;
+  text-transform: lowercase;
+  color: #6e6e73;
+  margin-top: 0;
+  margin-left: 2rem;
+  text-align: justify;
+
+}
+
+.research-text {
+  font-size: x-small;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  text-align: justify;
+  width: auto;
+
+}
+
+.webdev-skill {
+  flex: 1;
+
+}
+
+.webdev-title {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 1.5rem;
+  text-transform: lowercase;
+  color: #6e6e73;
+  margin-top: 0;
+  margin-left: 2rem;
+  text-align: justify;
+
+}
+
+.webdev-text {
+  font-size: x-small;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  text-align: justify;
+  width: auto;
+}
+
+.strategy-skill {
+  flex: 1;
+
+}
+
+.strategy-title {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 1.5rem;
+  text-transform: lowercase;
+  color: #6e6e73;
+  margin-top: 0;
+  margin-left: 2rem;
+  text-align: justify;
+
+}
+
+.strategy-text {
+  font-size: x-small;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  text-align: justify;
+  width: auto;
+}
+
+.product-skill {
+  flex: 1;
+
+}
+
+.product-title {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 1.5rem;
+  text-transform: lowercase;
+  color: #6e6e73;
+  margin-top: 0;
+  margin-left: 2rem;
+  text-align: justify;
+
+}
+
+.product-text {
+  font-size: x-small;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  text-align: justify;
+  width: auto;
+
+}
+
+@media screen and (min-width: 768px) {
+  .curious-lanre {
+    float: left;
+    margin-left: 3rem;
+    margin-top: 3rem;
+
+  }
+
+  .research-skill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .research-title {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    text-align: justify;
+
+  }
+
+  .research-text {
+    font-size: 1rem;
+    margin-left: 10.5rem;
+    margin-top: 1rem;
+    text-align: left;
+    width: 300px;
+
+  }
+
+
+  .webdev-lanre {
+    float: right;
+    margin-right: 3rem;
+    margin-top: 3rem;
+  }
+
+  .webdev-skill {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 30px;
+    margin-top: 13rem;
+  }
+
+  .webdev-title {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 1.5rem;
+    text-transform: lowercase;
+    color: #6e6e73;
+    position: absolute;
+    right: 0;
+    margin-right: 10.5rem;
+    margin-top: 3rem;
+    text-align: right;
+    white-space: nowrap;
+
+  }
+
+  .webdev-text {
+    font-size: 1rem;
+    margin-right: 10.5rem;
+    margin-top: 6.5rem;
+    position: absolute;
+    right: 0;
+    text-align: justify;
+    width: 300px;
+  }
+  .strategy-lanre {
+    float: left;
+    margin-left: 3rem;
+    margin-top: 3rem;
+
+  }
+
+  .strategy-skill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 30px;
+    margin-top: 25rem;
+  }
+
+  .strategy-title {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    text-align: justify;
+
+  }
+
+  .strategy-text {
+    font-size: 1rem;
+    margin-left: 10.5rem;
+    margin-top: 1rem;
+    text-align: left;
+    width: 300px;
+  }
+
+  .product-lanre {
+    float: right;
+    margin-right: 3rem;
+    margin-top: 3rem;
+  }
+
+  .product-skill {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 30px;
+    margin-top: 35rem;
+  }
+
+  .product-title {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 1.5rem;
+    text-transform: lowercase;
+    color: #6e6e73;
+    position: absolute;
+    right: 0;
+    margin-right: 10.5rem;
+    margin-top: 3rem;
+    text-align: right;
+    white-space: nowrap;
+
+  }
+
+  .product-text {
+    font-size: 1rem;
+    margin-right: 10.5rem;
+    margin-top: 6.5rem;
+    position: absolute;
+    right: 0;
+    text-align: justify;
+    width: 300px;
+  }
+
+}
+
+
+.skills-header {
+  color: #393b44;
+  display: block;
+  font-size: 3rem;
+  font-family: Helvetica, sans-serif;
+  font-weight:900;
+  margin: auto;
+  opacity: 0.1;
+  text-align: center;
+
+}
+
+/* This handles all the designs in the bottom container */
+
+.bottom-container {
+  background-color: black;
+  display: flex;
+  height: 50.75rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.contact-page {
+  color: grey;
+  display: block;
+  font-size: 1.5rem;
+  font-family: "Reem Kufi", sans-serif;
+  font-weight:300;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  margin: auto;
+  margin-left: 2rem;
+}
+
+
+.footer-link1 {
+  color: grey;
+  position: absolute;
+  left: 2rem;
+  bottom: 18rem;
+  font-size: 1rem;
+}
+
+.footer-link2 {
+  color: grey;
+  position: absolute;
+  left: 7rem;
+  bottom: 18rem;
+  font-size: 1rem;
+}
+
+.footer-link3 {
+  color: grey;
+  position: absolute;
+  left: 11rem;
+  bottom: 18rem;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-page {
+    color: grey;
+    display: block;
+    font-size: 3rem;
+    font-family: "Reem Kufi", sans-serif;
+    font-weight:600;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    margin: auto;
+    margin-left: 2rem;
+  }
+
+}
