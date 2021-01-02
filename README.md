@@ -1,2 +1,2 @@
 # simpleportfolio
-A simple portfolio about me.
+My simple portfolio.
